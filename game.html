@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/welcome_screen.css" type="text/css" rel="stylesheet">
+    <script src="js/JQUERY3.5.1_mini.js"></script>
+    <title>welcome</title>
+</head>
+<body>
+   <div id="loader">
+       <div id="loader-inner">
+       </div>
+       <p id="loading-dialogue">Loading.....</p>
+       <p id="click-dialogue"></p>
+   </div>
+   <video id="bg-vid" preload="auto" loop>
+       <source src="video/welcome.mp4" type="video/mp4">
+   </video>
+   <audio id="bg-aud" loop>
+       <source src="audio/background_welcom.mp3" type="audio/mp3">
+   </audio>
+   <audio id="hover-aud">
+       <source src="audio/hover.mp3" type="audio/mp3">
+   </audio>
+   <audio id="clk-aud">
+       <source src="audio/click.mp3" type="audio/mp3">
+   </audio>
+   <div id="form">
+       <input type="text" id="name" placeholder="Enter your name">
+       <h1 id="submit">Submit</h1>
+   </div>
+   <div id="sign-div">
+       <img id="sign" src="images/bullet-clipart-wood-png-5-transparent.png">
+       <h3 id="hello">Welcome</h3>
+       <h3 id="nme">Name</h3>
+   </div>
+   <div id="contents-centre">
+       <img id="centre-imgs" src="images/stick-clipart-wood-stick-8-transparent.png">
+       <p class="centre-text">START</p>
+       <img id="centre-imgs" src="images/stick-clipart-wood-stick-8-transparent.png">
+       <p class="centre-text">CONTROLS</p>
+       <img id="centre-imgs" src="images/stick-clipart-wood-stick-8-transparent.png">
+       <p class="centre-text">QUIT</p>
+   </div>
+</body>
+<script src="js/welcome_screen.js" type="text/javascript"></script>
+</html>

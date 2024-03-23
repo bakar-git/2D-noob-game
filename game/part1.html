@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>part1</title>
+    <link href="../css/part1.css" rel="stylesheet" type="text/css">
+    <script src="../js/JQUERY3.5.1_mini.js"></script>
+    <script src="../js/character_animation.js"></script>
+    <script src="../js/enemy_animations.js"></script>
+    <script src="../js/game-over.js"></script>
+</head>
+<body>
+   <div id="welcome">
+    <h1 id="welcome-screen">Welcome</h1>
+    <p id="clk">Click to continue</p>
+    </div>
+    <audio  class="aud" loop>
+        <source src="../audio/part1-1.mp3" type="audio/mp3">
+    </audio>
+    <div id="game">
+       <h1 id="score">Score:</h1>
+       <h1 id="bullet-remaining">Ammo:</h1>
+        <img id="character" src="../images/char/idle/idle0.png">
+        <img id="enemy1" src="../images/enemy2/Idle/0.png">
+        <img id="enemy2-1" src="../images/enemy1/Idle/0.png">
+        <img id="enemy2-2" src="../images/enemy3/Idle/0.png">
+        <img id="enemy3" src="../images/enemy4/Idle/0.png">
+    </div>
+    <div id="game-won" ></div>
+    <div id="game-over" >
+        <h1 id="txt-gameover">Congratulations!</h1>
+        <h1 id="txt-res">You have successfully died</h1>
+        <img id="res" src="../images/restart.png" onclick="restarts()">
+        <img id="hom" src="../images/home.png" onclick="home()">
+        
+    </div>
+</body>
+<script src="../js/part1.js"></script>
+</html>
